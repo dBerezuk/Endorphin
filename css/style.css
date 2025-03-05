@@ -488,6 +488,26 @@ button {
 	}
 }
 
+@media (hover: none) {
+	:is(
+			.button,
+			.slider-actions__button-arrow,
+			.soc1als__link,
+			.payments__link
+		):active {
+		opacity: 0.75;
+		scale: 1.1;
+	}
+
+	.cart:active .cart__image > img {
+		scale: 1.1;
+	}
+
+	.navigation__menu-link:active {
+		text-decoration: underline;
+	}
+}
+
 @media (max-width: 1280px) {
 	.section {
 		padding-block: 50px;
